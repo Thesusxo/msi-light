@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.S.I Light Enterprise — Global Electrical &amp; Lighting Trade</title>
+  <meta name="description"
+    content="M.S.I Light Enterprise is a leading importer and exporter of premium electrical appliances, lighting systems, and phone accessories. Based in Accra, Ghana, we source and distribute quality products worldwide." />
+  <meta name="keywords"
+    content="electrical appliances, lighting, import, export, general trading, phone accessories, Ghana, Accra" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23c9a94e'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='28' fill='%230c2340'>MSI</text></svg>" />
+</head>
+
+<body>
+  <!-- Cursor glow effect -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" id="mainNav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" id="navLogo">
+        <div class="nav__logo-icon">MSI</div>
+        <div class="nav__logo-text">M.S.I <span>Light</span></div>
+      </a>
+
+      <div class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#global">Global Trade</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact" class="nav__cta">Get In Touch</a>
+      </div>
+      <!-- Toggle placed securely inside nav__inner -->
+      <div class="nav__toggle" id="navToggle" role="button" tabindex="0" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="images/hero-bg.png" alt="Premium lighting showroom" />
+    </div>
+
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__orb hero__orb--3"></div>
+
+    <div class="container hero__content">
+      <div class="hero__badge reveal">
+        Established 2021 &bull; Accra, Ghana
+      </div>
+
+      <h1 class="hero__title reveal">
+        Illuminating<br>
+        Global Trade in<br>
+        <span class="highlight">Electrical Excellence</span>
+      </h1>
+
+      <p class="hero__subtitle reveal">
+        M.S.I Light Enterprise is your trusted partner in the import, export, and distribution of premium electrical
+        appliances, lighting systems, and phone accessories across the globe.
+      </p>
+
+      <div class="hero__actions reveal">
+        <a href="#contact" class="btn btn--primary" id="heroCta">
+          <span>Start a Partnership</span>
+          <span class="btn__icon">→</span>
+        </a>
+        <a href="#products" class="btn btn--outline" id="heroExplore">
+          <span>Explore Products</span>
+        </a>
+      </div>
+
+      <div class="hero__stats reveal">
+        <div class="hero__stat">
+          <div class="hero__stat-value" id="statYears">5+</div>
+          <div class="hero__stat-label">Years in Trade</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value" id="statProducts">500+</div>
+          <div class="hero__stat-label">Product Lines</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value" id="statPartners">50+</div>
+          <div class="hero__stat-label">Trade Partners</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value" id="statCountries">15+</div>
+          <div class="hero__stat-label">Countries Served</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" id="heroScroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== TICKER ===================== -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <div class="ticker__item"><span>◆</span> General Trading</div>
+      <div class="ticker__item"><span>◆</span> Electrical Appliances</div>
+      <div class="ticker__item"><span>◆</span> Phone Accessories</div>
+      <div class="ticker__item"><span>◆</span> Import &amp; Export</div>
+      <div class="ticker__item"><span>◆</span> Lighting Systems</div>
+      <div class="ticker__item"><span>◆</span> Industrial Equipment</div>
+      <div class="ticker__item"><span>◆</span> Supply of General Goods</div>
+      <div class="ticker__item"><span>◆</span> Global Distribution</div>
+      <!-- Duplicate for seamless loop -->
+      <div class="ticker__item"><span>◆</span> General Trading</div>
+      <div class="ticker__item"><span>◆</span> Electrical Appliances</div>
+      <div class="ticker__item"><span>◆</span> Phone Accessories</div>
+      <div class="ticker__item"><span>◆</span> Import &amp; Export</div>
+      <div class="ticker__item"><span>◆</span> Lighting Systems</div>
+      <div class="ticker__item"><span>◆</span> Industrial Equipment</div>
+      <div class="ticker__item"><span>◆</span> Supply of General Goods</div>
+      <div class="ticker__item"><span>◆</span> Global Distribution</div>
+    </div>
+  </div>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual reveal-left">
+          <div class="about__image-wrapper">
+            <img src="images/category-lighting.png" alt="M.S.I Light Enterprise — premium lighting products" />
+          </div>
+          <div class="about__accent-box">
+            <div class="number">Since<br>2021</div>
+            <div class="label">Trusted Enterprise</div>
+          </div>
+        </div>
+
+        <div class="about__text reveal-right">
+          <div class="section__label">About M.S.I Light</div>
+          <h2 class="section__title">
+            Your Trusted Partner in<br>
+            <span class="text-gold">Electrical Trading</span>
+          </h2>
+          <p class="section__desc">
+            M.S.I Light Enterprise is a registered sole proprietorship specializing in general trading, dealing in
+            electrical appliances and phone accessories, and the import and export of general goods. Based in Lashibi,
+            Accra — Greater Accra Region, Ghana — we serve as a reliable bridge between international manufacturers and
+            local markets.
+          </p>
+          <p class="section__desc" style="margin-top: 1rem;">
+            Our operations span retail sale in non-specialized stores (ISIC 4719) as well as the retail sale of
+            electrical household appliances, furniture, lighting equipment, and other household articles in specialized
+            stores (ISIC 4759). We supply quality general goods to businesses and consumers across the region.
+          </p>
+
+          <div class="about__features stagger-children">
+            <div class="about__feature reveal">
+              <div class="about__feature-icon">⚡</div>
+              <div>
+                <h4>General Trading</h4>
+                <p>Broad-spectrum sourcing and supply of quality merchandise</p>
+              </div>
+            </div>
+            <div class="about__feature reveal">
+              <div class="about__feature-icon">📱</div>
+              <div>
+                <h4>Phone Accessories</h4>
+                <p>Chargers, cables, cases, and mobile electronics</p>
+              </div>
+            </div>
+            <div class="about__feature reveal">
+              <div class="about__feature-icon">🔌</div>
+              <div>
+                <h4>Electrical Appliances</h4>
+                <p>Quality household and commercial electrical products</p>
+              </div>
+            </div>
+            <div class="about__feature reveal">
+              <div class="about__feature-icon">🌍</div>
+              <div>
+                <h4>Import &amp; Export</h4>
+                <p>International trade of general goods across borders</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTS / SERVICES SECTION ===================== -->
+  <section class="section products" id="products">
+    <div class="container">
+      <div class="products__header">
+        <div class="section__label reveal">Products &amp; Services</div>
+        <h2 class="section__title reveal">
+          What We <span class="text-gold">Trade</span>
+        </h2>
+        <p class="section__desc reveal">
+          From cutting-edge lighting systems to everyday electrical essentials — we source, import, and distribute
+          products that power homes, businesses, and industries.
+        </p>
+      </div>
+
+      <div class="products__grid stagger-children">
+        <!-- Card 1 -->
+        <div class="product-card reveal" id="productLighting">
+          <div class="product-card__image">
+            <img src="images/category-lighting.png" alt="Lighting systems and fixtures" />
+          </div>
+          <div class="product-card__content">
+            <div class="product-card__icon">💡</div>
+            <h3 class="product-card__title">Lighting Systems</h3>
+            <p class="product-card__desc">LED panels, pendant lights, recessed downlights, chandeliers, and
+              architectural lighting solutions.</p>
+            <div class="product-card__arrow">→</div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card reveal" id="productAppliances">
+          <div class="product-card__image">
+            <img src="images/category-appliances.png" alt="Electrical appliances and phone accessories" />
+          </div>
+          <div class="product-card__content">
+            <div class="product-card__icon">📱</div>
+            <h3 class="product-card__title">Phone Accessories</h3>
+            <p class="product-card__desc">Chargers, USB cables, power adapters, phone cases, screen protectors, and
+              mobile electronics.</p>
+            <div class="product-card__arrow">→</div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card reveal" id="productIndustrial">
+          <div class="product-card__image">
+            <img src="images/category-industrial.png" alt="Industrial electrical equipment" />
+          </div>
+          <div class="product-card__content">
+            <div class="product-card__icon">🔧</div>
+            <h3 class="product-card__title">Electrical Equipment</h3>
+            <p class="product-card__desc">Circuit breakers, wiring systems, switches, sockets, electrical panels, and
+              installation hardware.</p>
+            <div class="product-card__arrow">→</div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card reveal" id="productGeneral">
+          <div class="product-card__image">
+            <img src="images/category-general.png" alt="General goods and household items" />
+          </div>
+          <div class="product-card__content">
+            <div class="product-card__icon">📦</div>
+            <h3 class="product-card__title">General Goods</h3>
+            <p class="product-card__desc">Household items, kitchenware, furniture fittings, and a wide range of general
+              consumer goods for retail.</p>
+            <div class="product-card__arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GLOBAL TRADE SECTION ===================== -->
+  <section class="section global" id="global">
+    <div class="container">
+      <div class="global__grid">
+        <div class="global__content reveal-left">
+          <div class="section__label">Global Reach</div>
+          <h2 class="section__title">
+            Sourcing &amp; Distributing<br>
+            <span class="text-gold">Across Borders</span>
+          </h2>
+          <p class="section__desc">
+            With established trade routes connecting West Africa to manufacturers in Asia, Europe, and beyond, M.S.I
+            Light Enterprise ensures reliable sourcing and efficient distribution of quality goods — from factory floor
+            to your storefront.
+          </p>
+
+          <div class="global__highlights">
+            <div class="global__highlight">
+              <div class="global__highlight-icon">🚢</div>
+              <div>
+                <h4>Import Operations</h4>
+                <p>Direct sourcing from certified manufacturers in China, India, Turkey, and the UAE — ensuring
+                  competitive pricing and quality assurance.</p>
+              </div>
+            </div>
+            <div class="global__highlight">
+              <div class="global__highlight-icon">🌐</div>
+              <div>
+                <h4>Export Distribution</h4>
+                <p>Exporting quality general goods to neighbouring West African countries and emerging markets —
+                  expanding reach, building partnerships.</p>
+              </div>
+            </div>
+            <div class="global__highlight">
+              <div class="global__highlight-icon">📋</div>
+              <div>
+                <h4>Compliance &amp; Documentation</h4>
+                <p>Full regulatory compliance with Ghana Revenue Authority (TIN: P0012007161) and all import/export
+                  documentation handled seamlessly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="global__visual reveal-right">
+          <div class="global__map">
+            <img src="images/global-trade.png" alt="Global trade network visualization" />
+            <div class="global__dot global__dot--1" title="Accra, Ghana"></div>
+            <div class="global__dot global__dot--2" title="Asia"></div>
+            <div class="global__dot global__dot--3" title="South America"></div>
+            <div class="global__dot global__dot--4" title="Middle East"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY CHOOSE US ===================== -->
+  <section class="section why" id="why">
+    <div class="container">
+      <div class="why__header">
+        <div class="section__label reveal">Why M.S.I Light?</div>
+        <h2 class="section__title reveal">
+          Built on <span class="text-gold">Trust</span>, Driven by <span class="text-teal">Quality</span>
+        </h2>
+        <p class="section__desc reveal">
+          We differentiate ourselves through reliability, competitive pricing, and an unwavering commitment to quality —
+          making us the preferred trade partner for businesses across the region.
+        </p>
+      </div>
+
+      <div class="why__grid stagger-children">
+        <div class="why-card reveal">
+          <div class="why-card__number">01</div>
+          <div class="why-card__icon">✅</div>
+          <h3 class="why-card__title">Quality Assurance</h3>
+          <p class="why-card__desc">Every product we source undergoes rigorous quality checks. We partner only with
+            certified manufacturers and suppliers to ensure the highest standards reach our customers.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-card__number">02</div>
+          <div class="why-card__icon">🔗</div>
+          <h3 class="why-card__title">Reliable Supply Chain</h3>
+          <p class="why-card__desc">Our established logistics network ensures consistent supply — from factory to
+            warehouse to storefront. No delays, no shortages, just dependable delivery every time.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-card__number">03</div>
+          <div class="why-card__icon">💰</div>
+          <h3 class="why-card__title">Competitive Pricing</h3>
+          <p class="why-card__desc">Direct manufacturer relationships and optimized shipping routes allow us to offer
+            some of the most competitive prices in the Ghanaian market — without compromising quality.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-card__number">04</div>
+          <div class="why-card__icon">🤝</div>
+          <h3 class="why-card__title">Trusted Partnerships</h3>
+          <p class="why-card__desc">We build long-term relationships with our trade partners. From bulk orders to custom
+            sourcing, we tailor our services to meet your unique business needs.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-card__number">05</div>
+          <div class="why-card__icon">📊</div>
+          <h3 class="why-card__title">Market Expertise</h3>
+          <p class="why-card__desc">Deep knowledge of the Ghanaian and West African market landscape allows us to source
+            products that meet local demand, trends, and regulatory requirements.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-card__number">06</div>
+          <div class="why-card__icon">🛡️</div>
+          <h3 class="why-card__title">Fully Registered</h3>
+          <p class="why-card__desc">M.S.I Light Enterprise is a fully registered business (BN389430521) with full
+            regulatory compliance — giving you confidence in every transaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CEO SECTION ===================== -->
+  <section class="section ceo" id="ceo">
+    <div class="container">
+      <div class="ceo__grid">
+        <div class="ceo__content reveal-left">
+          <div class="ceo__quote-icon">“</div>
+          <blockquote class="ceo__quote">
+            Our priority goes beyond mere trading. We are dedicated to building enduring business partnerships that
+            stand on the pillars of absolute trust, consistent quality, and mutual growth.
+          </blockquote>
+          <div class="ceo__author">
+            <h4 class="ceo__name">Chief Executive Officer</h4>
+            <p class="ceo__title">MOHAMMED SANI ISSAH</p>
+          </div>
+        </div>
+        <div class="ceo__visual reveal-right">
+          <img src="images/ceo.png" alt="CEO of M.S.I Light" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__wrapper reveal-scale">
+        <div class="contact__info">
+          <div class="section__label">Business Inquiry</div>
+          <h2 class="section__title">
+            Let's Build a<br>
+            <span class="text-gold">Partnership</span>
+          </h2>
+          <p class="section__desc">
+            Whether you're looking for a reliable supplier, exploring import opportunities, or seeking an export partner
+            — we'd love to hear from you.
+          </p>
+
+          <div class="contact__details">
+            <div class="contact__detail">
+              <div class="contact__detail-icon">📍</div>
+              <div>
+                <h4>Principal Address</h4>
+                <p>Plot Number D89, Comm. 16<br>Near Tilapia Street, Lashibi<br>Accra — Greater Accra, Ghana</p>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon">📮</div>
+              <div>
+                <h4>P.O. Box</h4>
+                <p>P.O. Box 1786, Osu — Accra, GA/R</p>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p>0531745324 / 0206713596</p>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__detail-icon">🏢</div>
+              <div>
+                <h4>Registration</h4>
+                <p>BN389430521 &bull; TIN: P0012007161</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__form-wrapper">
+          <h3 class="section__title" style="font-size: 1.5rem; margin-bottom: 0.5rem;">Send an Inquiry</h3>
+          <p style="font-size: 0.88rem; color: var(--color-gray-400); margin-bottom: 1.5rem;">Fill out the form and our
+            team will respond within 24 hours.</p>
+
+          <form class="contact__form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Full Name</label>
+                <input type="text" id="contactName" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="contactCompany">Company</label>
+                <input type="text" id="contactCompany" placeholder="Company name" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" placeholder="you@company.com" required />
+              </div>
+              <div class="form-group">
+                <label for="contactPhone">Phone Number</label>
+                <input type="tel" id="contactPhone" placeholder="+233 xxx xxx xxx" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactInterest">Interest Area</label>
+              <select id="contactInterest">
+                <option value="" disabled selected>Select your interest</option>
+                <option value="import">Import Partnership</option>
+                <option value="export">Export Partnership</option>
+                <option value="supply">Bulk Supply / Wholesale</option>
+                <option value="lighting">Lighting Systems</option>
+                <option value="appliances">Electrical Appliances</option>
+                <option value="phone">Phone Accessories</option>
+                <option value="general">General Goods</option>
+                <option value="other">Other Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" placeholder="Tell us about your business needs..." rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary" id="contactSubmit">
+              <span>Send Inquiry</span>
+              <span class="btn__icon">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand Column -->
+        <div>
+          <a href="#" class="nav__logo">
+            <div class="nav__logo-icon">MSI</div>
+            <div class="nav__logo-text">M.S.I <span>Light</span></div>
+          </a>
+          <p class="footer__brand-desc">
+            M.S.I Light Enterprise — your trusted partner in general trading, electrical appliances, phone accessories,
+            and the import &amp; export of general goods. Registered in Accra, Ghana.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer__heading">Navigation</h4>
+          <div class="footer__links">
+            <a href="#hero">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Products &amp; Services</a>
+            <a href="#global">Global Trade</a>
+            <a href="#why">Why Choose Us</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="footer__heading">Our Services</h4>
+          <div class="footer__links">
+            <a href="#products">General Trading</a>
+            <a href="#products">Electrical Appliances</a>
+            <a href="#products">Phone Accessories</a>
+            <a href="#products">Import &amp; Export</a>
+            <a href="#products">Bulk Supply</a>
+            <a href="#products">General Goods</a>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="footer__heading">Get in Touch</h4>
+          <div class="footer__contact-info">
+            <div class="footer__contact-item">
+              <span>📍</span>
+              <span>Plot D89, Comm. 16, Lashibi, Accra, Ghana</span>
+            </div>
+            <div class="footer__contact-item">
+              <span>📮</span>
+              <span>P.O. Box 1786, Osu — Accra</span>
+            </div>
+            <div class="footer__contact-item">
+              <span>📞</span>
+              <span>0531745324 / 0206713596</span>
+            </div>
+            <div class="footer__contact-item">
+              <span>🏢</span>
+              <span>Reg: BN389430521</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2021 — 2026 M.S.I Light Enterprise. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== TOAST NOTIFICATION ===================== -->
+  <div class="toast" id="toast">
+    <div class="toast__icon" id="toastIcon">✓</div>
+    <div class="toast__content">
+      <div class="toast__title" id="toastTitle">Success</div>
+      <div class="toast__message" id="toastMessage">Your inquiry has been sent successfully!</div>
+    </div>
+    <button class="toast__close" id="toastClose" aria-label="Close notification">&times;</button>
+  </div>
+
+  <!-- ===================== JAVASCRIPT ===================== -->
+  <script>
+    // ========== Navigation Scroll Effect ==========
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // ========== Mobile Menu Toggle ==========
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('open');
+      });
+    });
+
+    // ========== Scroll Reveal (Intersection Observer) ==========
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Don't unobserve — keep animating on re-entry if desired
+          // revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -60px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ========== Animated Counter ==========
+    function animateCounter(element, target, suffix = '', duration = 2000) {
+      let start = 0;
+      const isPlus = target.toString().includes('+');
+      const numericTarget = parseInt(target);
+      const increment = numericTarget / (duration / 16);
+      const startTime = performance.now();
+
+      function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        // Ease-out quad
+        const eased = 1 - (1 - progress) * (1 - progress);
+        const current = Math.floor(eased * numericTarget);
+
+        element.textContent = current + (isPlus ? '+' : '') + suffix;
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        }
+      }
+      requestAnimationFrame(update);
+    }
+
+    // Observe stats for counter animation
+    const statsSection = document.querySelector('.hero__stats');
+    let statsAnimated = false;
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !statsAnimated) {
+          statsAnimated = true;
+          animateCounter(document.getElementById('statYears'), 5, '+');
+          animateCounter(document.getElementById('statProducts'), 500, '+');
+          animateCounter(document.getElementById('statPartners'), 50, '+');
+          animateCounter(document.getElementById('statCountries'), 15, '+');
+        }
+      });
+    }, { threshold: 0.5 });
+    statsObserver.observe(statsSection);
+
+    // ========== Cursor Glow Effect ==========
+    const cursorGlow = document.getElementById('cursorGlow');
+    let mouseX = 0, mouseY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function updateCursor() {
+      cursorGlow.style.left = mouseX + 'px';
+      cursorGlow.style.top = mouseY + 'px';
+      requestAnimationFrame(updateCursor);
+    }
+    updateCursor();
+
+    // ========== Smooth Scroll for Anchor Links ==========
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // ========== Toast Notification System ==========
+    const toast = document.getElementById('toast');
+    const toastIcon = document.getElementById('toastIcon');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMessage = document.getElementById('toastMessage');
+    const toastClose = document.getElementById('toastClose');
+    let toastTimeout;
+
+    function showToast(type, title, message) {
+      clearTimeout(toastTimeout);
+      toast.className = 'toast toast--' + type + ' toast--visible';
+      toastIcon.textContent = type === 'success' ? '✓' : type === 'error' ? '✕' : 'ℹ';
+      toastTitle.textContent = title;
+      toastMessage.textContent = message;
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('toast--visible');
+      }, 5000);
+    }
+
+    toastClose.addEventListener('click', () => {
+      toast.classList.remove('toast--visible');
+    });
+
+    // ========== EmailJS Initialization ==========
+    // IMPORTANT: Replace with your actual EmailJS credentials
+    // 1. Sign up at https://www.emailjs.com (free)
+    // 2. Add an email service (Gmail, Outlook, etc.)
+    // 3. Create an email template with these variables:
+    //    {{from_name}}, {{from_email}}, {{company}}, {{phone}}, {{interest}}, {{message}}
+    // 4. Replace the IDs below with your actual IDs
+    const EMAILJS_PUBLIC_KEY = 'nh6CzwcWjeYrIREZU';  // Your EmailJS public key
+    const EMAILJS_SERVICE_ID = 'service_7423gi9';   // M.S.I Light email service
+    const EMAILJS_TEMPLATE_ID = 'template_ip31wfk'; // M.S.I Light contact template
+
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+
+    // ========== Contact Form Handling ==========
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const btn = document.getElementById('contactSubmit');
+      const originalHTML = btn.innerHTML;
+      btn.innerHTML = '<span class="btn__spinner"></span><span>Sending...</span>';
+      btn.disabled = true;
+
+      // Gather form data
+      const templateParams = {
+        from_name: document.getElementById('contactName').value,
+        from_email: document.getElementById('contactEmail').value,
+        company: document.getElementById('contactCompany').value || 'Not specified',
+        phone: document.getElementById('contactPhone').value || 'Not provided',
+        interest: document.getElementById('contactInterest').value || 'Not selected',
+        message: document.getElementById('contactMessage').value || 'No message provided',
+        to_email: 'smohammed336.si@gmail.com'
+      };
+
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+        .then(() => {
+          // Success
+          btn.innerHTML = '<span>✓ Inquiry Sent!</span>';
+          btn.style.background = 'linear-gradient(135deg, #1a9e8f, #14746f)';
+          btn.style.color = '#fff';
+          contactForm.reset();
+          showToast('success', 'Inquiry Sent!', 'Thank you! We will respond within 24 hours.');
+
+          setTimeout(() => {
+            btn.innerHTML = originalHTML;
+            btn.disabled = false;
+            btn.style.background = '';
+            btn.style.color = '';
+          }, 3000);
+        })
+        .catch((error) => {
+          // Error
+          console.error('EmailJS Error:', error);
+          btn.innerHTML = originalHTML;
+          btn.disabled = false;
+          showToast('error', 'Failed to Send', 'Something went wrong. Please call us directly or try again later.');
+        });
+    });
+
+    // ========== Parallax effect on hero image ==========
+    const heroBg = document.querySelector('.hero__bg img');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      if (scrolled < window.innerHeight) {
+        heroBg.style.transform = `scale(1.1) translateY(${scrolled * 0.15}px)`;
+      }
+    });
+  </script>
+</body>
+
+</html>
